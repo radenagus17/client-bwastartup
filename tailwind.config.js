@@ -9,6 +9,9 @@ export default {
     "./error.vue",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
     extend: {
       boxShadow: {
         outline: "0 0 0 1px rgba(66, 153, 225, 0.5)",
@@ -26,18 +29,4 @@ export default {
     },
   },
   plugins: [],
-  purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: process.env.NODE_ENV === "production",
-    content: [
-      "components/**/*.vue",
-      "layouts/**/*.vue",
-      "pages/**/*.vue",
-      "plugins/**/*.js",
-      "nuxt.config.js",
-    ],
-  },
-  fontFamily: {
-    sans: ["Poppins", "sans-serif"],
-  },
 };
